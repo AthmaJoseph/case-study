@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="home.master.cs" Inherits="twinkle_home" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        window.onload = function () { noBack(); }
+        function noBack() { window.history.forward(); }
+    </script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+<title>Twinkle School</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--[if IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"><![endif]-->
+    </head>
+<body><form id="form1" runat="server">
+<div id="header">
+  <div> <a href="home.aspx"><img src="images/logos.jpg" alt=""></a>
+    <ul>
+      <li class="current"><a href="home.aspx">Admission</a></li>
+                   
+      <li><a href="messageadmin.aspx">Message</a></li>
+         <li><a href="stlist.aspx">Student List</a></li>
+      
+      <li><asp:Button ID="btnLogout" runat="server" BackColor="White" BorderStyle="None"
+ Font-Bold="true" Text="Logout" Font-Size="16px" ForeColor="Red" OnClick="btnLogout_Click" style="text-align: left" Height="30px" Width="75px" /></li>
+        
+    </ul>
+       
+
+           <div>
+ <asp:Label runat="server" ID="lbluserInfo"></asp:Label>
+ <br />
+ <br />
+ 
+ </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                <br />
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+  </div>
+</div>
+
+
+
+   
+
+
+<div id="footer">
+  <div>
+    <img src="images/loadmin.jpg" />
+  </div>
+  <p class="footnote"></p>
+</div>
+</body>
+</html>
+
